@@ -14,7 +14,7 @@ namespace StockTradingTests
       var highDailyPrice = new HighDailyPrice();
 
       var objectType = highDailyPrice.GetType();
-      var exists = objectType.GetMethod("FindHighest");
+      var exists = objectType.GetMethod("FindHighest",new Type[] { typeof(decimal[]), typeof(int)});
 
       Assert.True(exists != null, "HighDailyPrice should have a method: FindHighest.");
 

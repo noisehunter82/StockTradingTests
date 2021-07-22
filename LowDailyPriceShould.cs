@@ -14,7 +14,7 @@ namespace StockTradingTests
       var lowDailyPrice = new LowDailyPrice();
 
       var objectType = lowDailyPrice.GetType();
-      var exists = objectType.GetMethod("FindLowest");
+      var exists = objectType.GetMethod("FindLowest", new Type[] {typeof(decimal[])});
 
       Assert.True(exists != null, "LowDailyPrice should have a method: FindLowest");
 
