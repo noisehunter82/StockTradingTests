@@ -16,7 +16,7 @@ namespace StockTradingTests
       var objectType = lowDailyPrice.GetType();
       var exists = objectType.GetMethod("FindLowest");
 
-      Assert.True(exists != null, "LowDailyPrice should have a method FindLowest.");
+      Assert.True(exists != null, "LowDailyPrice should have a method: FindLowest");
 
     }
 
@@ -29,7 +29,7 @@ namespace StockTradingTests
       lowDailyPrice.FindLowest(pricesArray);
       var indexOfLow = lowDailyPrice.IndexOfLow;
 
-      Assert.True(indexOfLow == 1, "IndexOfLow should have value 2");
+      Assert.True(indexOfLow == 1, "IndexOfLow should have value: 1");
 
     }
 
@@ -42,7 +42,7 @@ namespace StockTradingTests
       lowDailyPrice.FindLowest(pricesArray);
       var lowPrice = lowDailyPrice.LowPrice;
 
-      Assert.True(lowPrice == 0m, "LowPrice should have value 12.4m.");
+      Assert.True(lowPrice == 0m, "LowPrice should have value: 0m");
 
     }
   }
