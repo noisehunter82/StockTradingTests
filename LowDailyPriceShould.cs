@@ -1,3 +1,4 @@
+using System;
 using Xunit;
 using StockTrading;
 
@@ -6,17 +7,29 @@ namespace StockTradingTests
 {
   public class LowDailyPriceShould
   {
+
+    [Fact]
+    public void FindLowest_Exists()
+    {
+      var lowDailyPrice = new LowDailyPrice();
+
+      var objectType = lowDailyPrice.GetType();
+      var exists = objectType.GetMethod("FindLowest");
+
+      Assert.True(exists != null, "LowDailyPrice should have a method FindLowest.");
+
+    }
+
     [Fact]
     public void FindLowest_AssignIndexOfLow()
     {
       var lowDailyPrice = new LowDailyPrice();
-      var pricesArray = new decimal[] { 15.45m, 24.56m, 12.4m, 32 };
-
+      var pricesArray = new decimal[] { 1m, 0m, 2m };
 
       lowDailyPrice.FindLowest(pricesArray);
       var indexOfLow = lowDailyPrice.IndexOfLow;
 
-      Assert.True(indexOfLow == 2, "IndexOfLow should have value 2");
+      Assert.True(indexOfLow == 1, "IndexOfLow should have value 2");
 
     }
 
@@ -24,13 +37,12 @@ namespace StockTradingTests
     public void FindLowest_AssignLowest()
     {
       var lowDailyPrice = new LowDailyPrice();
-      var pricesArray = new decimal[] { 15.45m, 24.56m, 12.4m, 32 };
-
+      var pricesArray = new decimal[] { 1m, 0m, 2m };
 
       lowDailyPrice.FindLowest(pricesArray);
       var lowPrice = lowDailyPrice.LowPrice;
 
-      Assert.True(lowPrice == 12.4m, "LowPrice should have value 12.4m.");
+      Assert.True(lowPrice == 0m, "LowPrice should have value 12.4m.");
 
     }
   }
