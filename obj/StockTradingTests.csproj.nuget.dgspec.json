@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jankes_mj/Sites/CodecademyProjects/C#/StockTradingTests/StockTradingTests.csproj": {}
+  },
+  "projects": {
+    "/Users/jankes_mj/Sites/CodecademyProjects/C#/StockTrading/StockTrading.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jankes_mj/Sites/CodecademyProjects/C#/StockTrading/StockTrading.csproj",
+        "projectName": "StockTrading",
+        "projectPath": "/Users/jankes_mj/Sites/CodecademyProjects/C#/StockTrading/StockTrading.csproj",
+        "packagesPath": "/Users/jankes_mj/.nuget/packages/",
+        "outputPath": "/Users/jankes_mj/Sites/CodecademyProjects/C#/StockTrading/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jankes_mj/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jankes_mj/Sites/CodecademyProjects/C#/StockTradingTests/StockTradingTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jankes_mj/Sites/CodecademyProjects/C#/StockTradingTests/StockTradingTests.csproj",
+        "projectName": "StockTradingTests",
+        "projectPath": "/Users/jankes_mj/Sites/CodecademyProjects/C#/StockTradingTests/StockTradingTests.csproj",
+        "packagesPath": "/Users/jankes_mj/.nuget/packages/",
+        "outputPath": "/Users/jankes_mj/Sites/CodecademyProjects/C#/StockTradingTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jankes_mj/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/jankes_mj/Sites/CodecademyProjects/C#/StockTrading/StockTrading.csproj": {
+                "projectPath": "/Users/jankes_mj/Sites/CodecademyProjects/C#/StockTrading/StockTrading.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.7.1, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
