@@ -16,7 +16,7 @@ namespace StockTradingTests
       var objectType = highDailyPrice.GetType();
       var exists = objectType.GetMethod("FindHighest",new Type[] { typeof(decimal[]), typeof(int)});
 
-      Assert.True(exists != null, "HighDailyPrice should have a method: FindHighest.");
+      Assert.True(exists != null, "HighDailyPrice should have a method 'FindHighest' that takes array of decimal values and and an int as arguments");
 
     }
 
@@ -44,7 +44,7 @@ namespace StockTradingTests
       highDailyPrice.FindHighest(pricesArray, indexOfLow);
       var indexOfHigh = highDailyPrice.IndexOfHigh;
 
-      Assert.True(indexOfHigh == null, "IndexOfHigh should have value: null");
+      Assert.True(indexOfHigh == 0m, "IndexOfHigh should have value: null");
 
     }
 
